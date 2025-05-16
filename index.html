@@ -1,223 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pawan Chandani - Data Analyst Portfolio</title>
-    <style>
-      /* Reset & base */
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background: #f4f7f8;
-        padding: 20px;
-        max-width: 960px;
-        margin: auto;
-      }
-
-      /* Header and Nav */
-      header {
-        text-align: center;
-        margin-bottom: 40px;
-        position: relative;
-      }
-      header h1 {
-        font-size: 2.8rem;
-        color: #2c3e50;
-      }
-      header p {
-        font-size: 1.2rem;
-        color: #555;
-        margin-top: 6px;
-      }
-
-      nav {
-        margin-top: 20px;
-        text-align: center;
-      }
-      nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-      }
-      nav ul li {
-      }
-      nav a {
-        color: #2980b9;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        transition: color 0.3s ease;
-      }
-      nav a:hover {
-        color: #1c5980;
-      }
-
-      /* Sections */
-      section {
-        background: #fff;
-        padding: 25px 30px;
-        border-radius: 8px;
-        margin-bottom: 30px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      h2 {
-        margin-bottom: 20px;
-        color: #2c3e50;
-        border-bottom: 3px solid #2980b9;
-        padding-bottom: 8px;
-      }
-
-      .project {
-        margin-bottom: 25px;
-      }
-      .project-title {
-        font-weight: 700;
-        font-size: 1.25rem;
-        margin-bottom: 6px;
-        color: #34495e;
-      }
-      .project p {
-        margin-bottom: 6px;
-      }
-      .project a {
-        color: #2980b9;
-        font-weight: 600;
-        text-decoration: none;
-      }
-      .project a:hover {
-        text-decoration: underline;
-      }
-
-      /* Contact */
-      ul.contact-list {
-        list-style: none;
-        padding-left: 0;
-      }
-      ul.contact-list li {
-        margin-bottom: 12px;
-        font-size: 1rem;
-      }
-      ul.contact-list a {
-        color: #2980b9;
-        text-decoration: none;
-      }
-      ul.contact-list a:hover {
-        text-decoration: underline;
-      }
-
-      /* Responsive Nav for small screens */
-      @media (max-width: 600px) {
-        nav ul {
-          flex-direction: column;
-          gap: 15px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Pawan Chandani</h1>
-      <p>Aspiring Data Analyst | Python, SQL, Power BI</p>
-      <nav>
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <p class="project-title">Sales Dashboard</p>
-        <p>
-          Interactive sales dashboard built using Power BI and Python to track
-          monthly KPIs, visualize sales trends, and generate insights for better
-          decision-making.
-        </p>
-        <p>
-          <a
-            href="https://github.com/pawanchandani/Sales-Performance-Dashboard"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </p>
-      </div>
-
-      <div class="project">
-        <p class="project-title">Customer Segmentation</p>
-        <p>
-          Segmented customer data using clustering techniques in Python to
-          identify target groups and improve marketing strategies.
-        </p>
-        <p>
-          <a
-            href="https://github.com/pawanchandani/Customer-Segmentation"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Feel free to connect with me on LinkedIn or send me an email.</p>
-      <ul class="contact-list">
-        <li>
-          Email:
-          <a href="mailto:pawanchandani.359@gmail.com"
-            >pawanchandani.359@gmail.com</a
-          >
-        </li>
-        <li>
-          LinkedIn:
-          <a
-            href="https://linkedin.com/in/pawanchandani"
-            target="_blank"
-            rel="noopener noreferrer"
-            >linkedin.com/in/pawanchandani</a
-          >
-        </li>
-        <li>
-          GitHub:
-          <a
-            href="https://github.com/pawanchandani"
-            target="_blank"
-            rel="noopener noreferrer"
-            >github.com/pawanchandani</a
-          >
-        </li>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pawan Chandani - Data Analyst Portfolio</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Pawan Chandani</h1>
+    <p>Aspiring Data Analyst | Python, SQL, Power BI</p>
+    <nav>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="dark-mode-toggle">Toggle Dark Mode</button></li>
       </ul>
-    </section>
+      <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+  </div>
+</header>
 
-    <script>
-      // Smooth scrolling for nav links
-      document.querySelectorAll("nav a").forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute("href").substring(1);
-          const targetSection = document.getElementById(targetId);
-          if (targetSection) {
-            window.scrollTo({
-              top: targetSection.offsetTop - 20,
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-    </script>
-  </body>
+<main class="container">
+  <section id="projects">
+    <h2>Projects</h2>
+    <article class="project">
+      <h3>Sales Dashboard</h3>
+      <p>Interactive sales dashboard built using Power BI and Python to track monthly KPIs, visualize sales trends, and generate insights for better decision-making.</p>
+      <a href="https://github.com/pawanchandani/Sales-Performance-Dashboard" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="project">
+      <h3>Customer Segmentation</h3>
+      <p>Segmented customer data using clustering techniques in Python to identify target groups and improve marketing strategies.</p>
+      <a href="https://github.com/pawanchandani/Customer-Segmentation" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to connect with me on LinkedIn or send me an email.</p>
+    <ul class="contact-info">
+      <li>Email: <a href="mailto:pawanchandani.359@gmail.com">pawanchandani.359@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/pawanchandani" target="_blank" rel="noopener">linkedin.com/in/pawanchandani</a></li>
+      <li>GitHub: <a href="https://github.com/pawanchandani" target="_blank" rel="noopener">github.com/pawanchandani</a></li>
+    </ul>
+  </section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
 </html>
